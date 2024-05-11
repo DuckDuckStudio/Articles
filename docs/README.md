@@ -33,6 +33,7 @@
 - [让 JS 代码在网页加载完成后再执行](https://duckduckstudio.github.io/Articles/#/信息速查/JS/加载完成后再执行)
 - [自动显示建站周年庆祝文本](https://duckduckstudio.github.io/Articles/#/信息速查/JS/自动显示建站周年庆祝文本)
 - [编写一个 [你知道吗？] 板块](https://duckduckstudio.github.io/Articles/#/信息速查/JS/你知道吗)
+- [在 JS 中对大数字进行单位转化](https://duckduckstudio.github.io/Articles/#/信息速查/JS/数字单位转化)
 
 ### Python
 #### 库
@@ -59,5 +60,5 @@
 - [如何在朋友面前玩花的](https://duckduckstudio.github.io/Articles/#/想玩花的可以看这篇)
 
 <div style="text-align: right;">
-    <p>最后更新：<strong>2024/5/11</strong></p>
+    <p>最后更新：<strong>2024/5/12</strong></p>
 </div>
