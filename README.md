@@ -2,8 +2,8 @@
 请点击下面的链接开始阅读：
 
 ## 如何怎样(How to do?)
-- [如何打开命令行(cmd)](https://duckduckstudio.github.io/Articles/#/如何怎样/如何打开命令提示符.html)
-- [如何打开任务管理器](https://duckduckstudio.github.io/Articles/#/如何怎样/如何打开任务管理器.html)
+- [如何打开命令行(cmd)](https://duckduckstudio.github.io/Articles/如何怎样/如何打开命令提示符.html)
+- [如何打开任务管理器](https://duckduckstudio.github.io/Articles/如何怎样/如何打开任务管理器.html)
 - ~~[自己看的一些MSVC指令](https://duckduckstudio.github.io/Articles/#/如何怎样/MSVC部分指令)~~
 
 ## 信息速查(Quick query)
