@@ -26,6 +26,7 @@
 - [JS的注释](https://duckduckstudio.github.io/Articles/#/信息速查/JS/关于注释)
 - [让 JS 代码在网页加载完成后再执行](https://duckduckstudio.github.io/Articles/#/信息速查/JS/加载完成后再执行)
 - [自动显示建站周年庆祝文本](https://duckduckstudio.github.io/Articles/#/信息速查/JS/自动显示建站周年庆祝文本)
+- [编写一个 [你知道吗？] 板块](https://duckduckstudio.github.io/Articles/#/信息速查/JS/你知道吗)
 
 ### Python
 #### 库
