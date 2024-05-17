@@ -56,11 +56,15 @@
 - [循环嵌套](https://duckduckstudio.github.io/Articles/#/信息速查/Python/循环/循环嵌套)
 - [break与continue](https://duckduckstudio.github.io/Articles/#/信息速查/Python/循环/break与continue)
 - [while循环](https://duckduckstudio.github.io/Articles/#/信息速查/Python/循环/while)
+
 ## 独立文章
 - [给电脑小白的一点建议](https://duckduckstudio.github.io/Articles/#/给电脑小白的一点建议)
 - [实用操作](https://duckduckstudio.github.io/Articles/#/实用操作)
 - [如何在朋友面前玩花的](https://duckduckstudio.github.io/Articles/#/想玩花的可以看这篇)
 
+## 学习资料
+- [学习资料索引](https://duckduckstudio.github.io/Articles/#/学习资料)
+
 <div style="text-align: right;">
-    <p>最后更新：<strong>2024/5/16</strong></p>
+    <p>最后更新：<strong>2024/5/18</strong></p>
 </div>
