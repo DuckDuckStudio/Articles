@@ -36,6 +36,7 @@
 - [编写一个 [你知道吗？] 板块](https://duckduckstudio.github.io/Articles/#/信息速查/JS/你知道吗)
 - [在 JS 中对大数字进行单位转化](https://duckduckstudio.github.io/Articles/#/信息速查/JS/数字单位转化)
 - [通过使用字符串的索引来访问特定位置的字符](https://duckduckstudio.github.io/Articles/#/信息速查/JS/索引特定位置的字符)
+- [确定用户访问位置](https://duckduckstudio.github.io/Articles/#/信息速查/JS/确定用户位置)
 
 ### Python
 #### 库
@@ -66,5 +67,5 @@
 - [学习资料索引](https://duckduckstudio.github.io/Articles/#/学习资料)
 
 <div style="text-align: right;">
-    <p>最后更新：<strong>2024/5/18</strong></p>
+    <p>最后更新：<strong>2024/5/20</strong></p>
 </div>
