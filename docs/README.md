@@ -64,7 +64,7 @@
 - [如何在朋友面前玩花的](https://duckduckstudio.github.io/Articles/#/想玩花的可以看这篇)
 
 ## 学习资料
-- [学习资料索引](https://duckduckstudio.github.io/Articles/#/学习资料)
+- [学习资料索引](https://duckduckstudio.github.io/Articles/#/学习资料/)
 
 <div style="text-align: right;">
     <p>最后更新：<strong>2024/5/20</strong></p>
