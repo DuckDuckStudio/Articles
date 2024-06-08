@@ -20,6 +20,7 @@
 - [Git提交规范](https://duckduckstudio.github.io/Articles/#/信息速查/Git/Git提交规范) ~~(如果是自己写的项目请先保证自己看得懂)~~
 - [如何将空文件夹添加到版本控制中](https://duckduckstudio.github.io/Articles/#/信息速查/Git/跟踪空文件夹)
 - [在远程仓库将分支更名后怎么办](https://duckduckstudio.github.io/Articles/#/信息速查/Git/在远程仓库将分支更名后怎么办)
+- [如何清空分支提交](https://duckduckstudio.github.io/Articles/#/信息速查/Git/清空提交)
 
 ### HTML
 - [如何创建简单亚克力效果 (使用css)](https://duckduckstudio.github.io/Articles/#/信息速查/html/如何创建简单亚克力效果)
