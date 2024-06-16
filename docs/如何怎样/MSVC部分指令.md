@@ -10,3 +10,9 @@
 展开整个文件中的代码: (`Ctrl`+`K`)+(`Ctrl`+`J`)  
 
 关闭所有选项卡: `Ctrl`+`K`+`W`
+
+# Git
+移出多余分支
+```bash
+git remote prune origin
+```
