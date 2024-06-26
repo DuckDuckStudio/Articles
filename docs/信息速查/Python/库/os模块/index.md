@@ -73,6 +73,12 @@ isdir = os.path.isdir("/path/to/directory")
 os.chmod("filename", 0o755)  # 修改文件权限为 rwxr-xr-x
 ```
 
+**4、统一路径斜杠：**
+
+```python
+path = os.path.normpath(path)
+```
+
 通过 `os` 模块，Python 提供了丰富的操作系统级别的功能，让我们可以轻松地 **与操作系统交互** ，执行各种操作。无论是 **文件操作** 、**目录操作**还是 **进程管理** ，`os` 模块都能帮助我们高效地完成任务。
 
 总的来说，`os` 模块是 Python 编程中不可或缺的一部分，熟练掌握其用法将有助于提升编程效率和灵活性。

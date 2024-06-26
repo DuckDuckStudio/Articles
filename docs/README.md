@@ -46,6 +46,8 @@
 ### Python
 #### 库
 - [os](https://duckduckstudio.github.io/Articles/#/信息速查/Python/库/os模块/index)
+##### json
+- [获取值](https://duckduckstudio.github.io/Articles/#/信息速查/Python/库/json/获取值)
 
 #### 判断
 - [如果/否则如果/否则 (if/elif/else)](https://duckduckstudio.github.io/Articles/#/信息速查/Python/判断/if_elif_else)
@@ -72,5 +74,5 @@
 - [学习资料索引](https://duckduckstudio.github.io/Articles/#/学习资料/)
 
 <div style="text-align: right;">
-    <p>最后更新：<strong>2024/5/20</strong></p>
+    <p>最后更新：<strong>2024/6/26</strong></p>
 </div>
