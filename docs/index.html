@@ -24,7 +24,6 @@
                 &nbsp;|&nbsp;
                 <a href="https://duckduckstudio.github.io/Articles/" target="_blank">[前往文章索引]</a>
               </p>
-              <p>网站最新修改内容: <span id="commitMessage">[加载中...]</span></p>
               </div>
             `;
           hook.afterEach(function (html) {
@@ -36,21 +35,5 @@
   </script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
-  <script>
-    // GitHub API endpoint for fetching repository commits
-    const repoUrl = 'https://api.github.com/repos/DuckDuckStudio/Articles/commits';
-    
-    // Fetch data from GitHub API
-    fetch(repoUrl)
-        .then(response => response.json())
-        .then(data => {
-            // Get latest commit message
-            const latestCommitMessage = data[0].commit.message;
-            
-            // Display latest commit message on the HTML page
-            document.getElementById('commitMessage').innerHTML = `${latestCommitMessage}`;
-        })
-        .catch(error => console.error('[ERROR]无法获取GitHub上的最新提交信息:', error));
-  </script>
 </body>
 </html>
