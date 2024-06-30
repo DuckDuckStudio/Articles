@@ -65,6 +65,9 @@
 - [break与continue](https://duckduckstudio.github.io/Articles/#/信息速查/Python/循环/break与continue)
 - [while循环](https://duckduckstudio.github.io/Articles/#/信息速查/Python/循环/while)
 
+### 终端
+- [记录命令输出](https://duckduckstudio.github.io/Articles/#/信息速查/终端/记录命令输出)
+
 ## 独立文章
 - [给电脑小白的一点建议](https://duckduckstudio.github.io/Articles/#/给电脑小白的一点建议)
 - [实用操作](https://duckduckstudio.github.io/Articles/#/实用操作)
@@ -74,5 +77,5 @@
 - [学习资料索引](https://duckduckstudio.github.io/Articles/#/学习资料/)
 
 <div style="text-align: right;">
-    <p>最后更新：<strong>2024/6/26</strong></p>
+    <p>最后更新：<strong>2024/7/1</strong></p>
 </div>
