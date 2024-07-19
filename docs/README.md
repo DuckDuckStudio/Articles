@@ -65,6 +65,11 @@
 - [break与continue](https://duckduckstudio.github.io/Articles/#/信息速查/Python/循环/break与continue)
 - [while循环](https://duckduckstudio.github.io/Articles/#/信息速查/Python/循环/while)
 
+### C#
+#### 控制台程序
+##### 输出
+- [Write与WriteLine](https://duckduckstudio.github.io/Articles/#/信息速查/csharp/控制台程序/输出/Write与WriteLine)
+
 ### 终端
 - [记录命令输出](https://duckduckstudio.github.io/Articles/#/信息速查/终端/记录命令输出)
 
@@ -77,5 +82,5 @@
 - [学习资料索引](https://duckduckstudio.github.io/Articles/#/学习资料/)
 
 <div style="text-align: right;">
-    <p>最后更新：<strong>2024/7/1</strong></p>
+    <p>最后更新：<strong>2024/7/19</strong></p>
 </div>
