@@ -31,6 +31,7 @@
 - [通过GitHubAPI获取仓库最新提交内容 (使用JS)](https://duckduckstudio.github.io/Articles/#/信息速查/html/通过GitHubAPI获取仓库最新提交内容)
 - [如何引入外部CSS样式文件或JS脚本](https://duckduckstudio.github.io/Articles/#/信息速查/html/如何引入外部css或js)
 - [如何自动重定向至新页面](https://duckduckstudio.github.io/Articles/#/信息速查/html/自动重定向)
+- [如何在网站上使用自己的字体](https://duckduckstudio.github.io/Articles/#/信息速查/html/如何在网站上使用自己的字体)
 
 ### JS
 - [随机选取APlay歌单](https://duckduckstudio.github.io/Articles/#/信息速查/JS/随机歌单)
@@ -82,5 +83,5 @@
 - [学习资料索引](https://duckduckstudio.github.io/Articles/#/学习资料/)
 
 <div style="text-align: right;">
-    <p>最后更新：<strong>2024/7/19</strong></p>
+    <p>最后更新：<strong>2024/7/23</strong></p>
 </div>
