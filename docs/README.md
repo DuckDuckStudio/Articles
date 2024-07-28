@@ -70,6 +70,7 @@
 #### 控制台程序
 ##### 输出
 - [Write与WriteLine](https://duckduckstudio.github.io/Articles/#/信息速查/csharp/控制台程序/输出/Write与WriteLine)
+- [控制颜色](https://duckduckstudio.github.io/Articles/#/信息速查/csharp/控制台程序/输出/控制颜色.md)
 
 ### 终端
 - [记录命令输出](https://duckduckstudio.github.io/Articles/#/信息速查/终端/记录命令输出)
@@ -83,5 +84,5 @@
 - [学习资料索引](https://duckduckstudio.github.io/Articles/#/学习资料/)
 
 <div style="text-align: right;">
-    <p>最后更新：<strong>2024/7/23</strong></p>
+    <p>最后更新：<strong>2024/7/28</strong></p>
 </div>
