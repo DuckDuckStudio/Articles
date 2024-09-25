@@ -1,0 +1,7 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 提交综合问题
+    url: https://github.com/DuckDuckStudio/yazicbs.github.io/issues
+  - name: 查看已经打开的问题
+    url: https://github.com/DuckDuckStudio/Articles/issues
+    about: 请确认你的问题没有与已存在的问题重复。
