@@ -78,6 +78,7 @@
 
 ### 终端
 - [记录命令输出](https://duckduckstudio.github.io/Articles/#/信息速查/终端/记录命令输出)
+- [PowerShell vs CMD](https://duckduckstudio.github.io/Articles/#/信息速查/终端/PowerShellvsCMD)
 
 ## 独立文章
 - [给电脑小白的一点建议](https://duckduckstudio.github.io/Articles/#/给电脑小白的一点建议)
@@ -88,5 +89,5 @@
 - [学习资料索引](https://duckduckstudio.github.io/Articles/#/学习资料/)
 
 <div style="text-align: right;">
-    <p>最后更新：<strong>2024/8/12</strong></p>
+    <p>最后更新：<strong>2024/11/11</strong></p>
 </div>
