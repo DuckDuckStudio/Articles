@@ -25,6 +25,7 @@
 
 ### Markdown
 - [GitHub上突出显示内容(blockquote)](https://duckduckstudio.github.io/Articles/#/信息速查/Markdown/GitHub突出显示)
+- [链接带空格标题](https://duckduckstudio.github.io/Articles/#/信息速查/Markdown/链接带空格标题)
 
 ### HTML
 - [如何创建简单亚克力效果 (使用css)](https://duckduckstudio.github.io/Articles/#/信息速查/html/如何创建简单亚克力效果)
@@ -89,5 +90,5 @@
 - [学习资料索引](https://duckduckstudio.github.io/Articles/#/学习资料/)
 
 <div style="text-align: right;">
-    <p>最后更新：<strong>2024/11/11</strong></p>
+    <p>最后更新：<strong>2024/11/15</strong></p>
 </div>
