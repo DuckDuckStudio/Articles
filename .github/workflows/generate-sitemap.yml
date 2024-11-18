@@ -29,17 +29,17 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
+          # 获取当前日期和时间
+          DATE_TIME=$(date '+%Y/%m/%d %H:%M')
+          
           BRANCH_NAME="sitemap-update-$(date +%Y%m%d%H%M%S)"
           git checkout -b $BRANCH_NAME
           echo "已创建分支 $BRANCH_NAME"
           git config --global user.name "${{ secrets.BOT_ACCOUNT }}"
           git config --global user.email "${{ secrets.BOT_EMAIL }}"
-          git add sitemap.xml
-          git commit -m "更新 sitemap.xml"
+          git add docs/sitemap.xml
+          git commit -m "[${DATE_TIME}] Auto update sitemap"
           git push --set-upstream origin $BRANCH_NAME
-
-          # 获取当前日期和时间
-          DATE_TIME=$(date '+%Y/%m/%d %H:%M')
 
           # 生成工作流 URL
           WORKFLOW_URL="https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
