@@ -3,13 +3,15 @@ import re
 import sys
 import requests
 
-DIRECTORY = os.path.dirname(os.path.dirname(os.path.abspath(__file__))) # 指定要检查的目录为所在目录上级目录
-IGNORE_FOLDERS = ['111'] # 忽略的文件夹
-IGNORE_FILES = ['111'] # 忽略的文件
+DIRECTORY = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+IGNORE_FOLDERS = ['no'] # 忽略的文件夹
+IGNORE_FILES = ['no'] # 忽略的文件
 IGNORE_URLS = [
-    ''
+    # 常时
+    'no'
 ] # 忽略的链接
 
+# 更新后的链接正则表达式
 URL_REGEX = re.compile(r'"https://[^\'"\n\r\s<>]*(?=[\'"])')
 
 def check_link(url):
