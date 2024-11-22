@@ -35,15 +35,16 @@ try {
         scanDirectory(fullPath);
       } else if (file.endsWith('.md') || file.endsWith('.html')) {
         const relativePath = path.relative(docsRoot, fullPath).replace(/\\/g, '/');
+
+        // 如果当前路径在忽略列表中，则跳过
+        if (ignorePatterns.some(pattern => relativePath.includes(pattern))) {
+          return; // 跳过此文件
+        }
+
         const encodedPath = encodeURIComponent(relativePath).replace(/%2F/g, '/'); // 对路径进行编码并替换%2F为/
 
         // 删除 URL 中的 `.md` 后缀
         const urlWithoutMd = encodedPath.replace(/\.md$/, '');
-
-        // 如果当前路径在忽略列表中，则跳过
-        if (ignorePatterns.some(pattern => urlWithoutMd.includes(pattern))) {
-          return; // 跳过此文件
-        }
 
         const fullUrl = `${repoUrl}/${urlWithoutMd}`;
         urls.add(fullUrl);
