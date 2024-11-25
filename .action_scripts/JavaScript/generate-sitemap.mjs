@@ -1,6 +1,7 @@
 import { writeFileSync, readdirSync, statSync } from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { execSync } from 'child_process';
 
 // 简化的辅助函数来获取当前模块的目录
 const getScriptDir = () => path.dirname(fileURLToPath(import.meta.url));
@@ -13,6 +14,19 @@ try {
 
   const urls = new Set();
 
+  // 通过 Git 命令，获取文件的最后提交日期
+  function getLastCommitDate(filePath) {
+    try {
+      // 使用 git log 命令获取最后一次提交的时间
+      const result = execSync(`git log -1 --format=%cI -- "${filePath}"`, { cwd: docsRoot });
+      const lastCommitDate = result.toString().trim();
+      return lastCommitDate
+    } catch (err) {
+      console.error(`[ERROR] 获取 ${filePath} 的最后提交时间失败: `, err);
+      return ''; // 出错时返回空字符串
+    }
+  }
+
   // 扫描目录并生成 URL 列表
   function scanDirectory(dir) {
     // 定义一个忽略的文件路径列表，放在函数内部
@@ -21,8 +35,9 @@ try {
       '404.html',
       '.nojekyll',
       '某鸭的文章页面模板.html',
-      'exam/ple.html', // 忽略某个目录下的特定文件 - md的不用后缀
-      'exam/ple/',      // 忽略某个目录
+      '新时代科技发展与工作',
+      '玻璃厂',
+      '岳阳楼记',
     ];
 
     const files = readdirSync(dir);
@@ -41,13 +56,24 @@ try {
           return; // 跳过此文件
         }
 
+        const lastmod = getLastCommitDate(relativePath);
+
         const encodedPath = encodeURIComponent(relativePath).replace(/%2F/g, '/'); // 对路径进行编码并替换%2F为/
 
         // 删除 URL 中的 `.md` 后缀
         const urlWithoutMd = encodedPath.replace(/\.md$/, '');
 
         const fullUrl = `${repoUrl}/${urlWithoutMd}`;
-        urls.add(fullUrl);
+
+        // 只在获取到有效的 lastmod 时添加 <lastmod> 标签
+        const urlTag = `  <url>\n    <loc>${fullUrl}</loc>`;
+        if (lastmod) {
+          // 如果 lastmod 存在，添加 <lastmod>
+          urls.add(`${urlTag}\n    <lastmod>${lastmod}</lastmod>\n  </url>`);
+        } else {
+          // 如果没有 lastmod，直接添加 <loc>
+          urls.add(`${urlTag}\n  </url>`);
+        }
       }
     });
   }
@@ -61,15 +87,14 @@ try {
   let sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n`;
   sitemap += `<!-- 生成日期: ${currentDate} -->\n`; // 添加生成日期的注释
   sitemap += `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
-               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-               xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 
-                                   http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">\n\n`;
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+              xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 
+                                  http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">\n\n`;
 
   // 生成 URL 列表
   urls.forEach(url => {
-    sitemap += `<url>\n`;
-    sitemap += `  <loc>${url}</loc>\n`;
-    sitemap += `</url>\n`;
+    sitemap += url; // 每个 URL 包含 <loc> 和可能的 <lastmod>
+    sitemap += `\n`; // 添加换行
   });
 
   sitemap += `</urlset>\n`;
@@ -79,7 +104,6 @@ try {
 
   console.log('[INFO] 已成功生成并保存为 sitemap.xml');
   process.exit(0);
-
 } catch (error) {
   console.error('[ERROR] 生成 Sitemap 时发生错误:', error.message);
   process.exit(1);
