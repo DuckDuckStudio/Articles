@@ -22,6 +22,7 @@
 - [在远程仓库将分支更名后怎么办](https://duckduckstudio.github.io/Articles/#/信息速查/Git/在远程仓库将分支更名后怎么办)
 - [如何清空分支提交](https://duckduckstudio.github.io/Articles/#/信息速查/Git/清空提交)
 - [如何不再跟踪文件](https://duckduckstudio.github.io/Articles/#/信息速查/Git/不再跟踪)
+- [批量清理本地分支](https://duckduckstudio.github.io/Articles/#/信息速查/Git/批量清理本地分支)
 
 ### Markdown
 - [GitHub上突出显示内容(blockquote)](https://duckduckstudio.github.io/Articles/#/信息速查/Markdown/GitHub突出显示)
@@ -90,5 +91,5 @@
 - [学习资料索引](https://duckduckstudio.github.io/Articles/#/学习资料/)
 
 <div style="text-align: right;">
-    <p>最后更新：<strong>2024/11/15</strong></p>
+    <p>最后更新：<strong>2025/01/02</strong></p>
 </div>
