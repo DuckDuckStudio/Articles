@@ -7,6 +7,8 @@ on:
     paths:
       - '**/*.html'
       - '**/*.md'
+      - '.github/workflows/generate-sitemap.yml'
+      - '.action_scripts/JavaScript/generate-sitemap.mjs'
   workflow_dispatch:
 
 jobs:
@@ -58,3 +60,12 @@ jobs:
                        --reviewer DuckDuckStudio
 
           echo "Pull Request 创建成功。"
+
+      - name: 启用自动合并 (压缩)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          # 获取前面创建的 PR 编号，确保 PR 名包含 "Auto update sitemap" 并带有 "工作流" 标签
+          PR_NUMBER=$(gh pr list --limit 1 --search "Auto update sitemap" --label "工作流" --json number | jq -r '.[0].number')
+          gh pr merge $PR_NUMBER --squash --auto
+          gh pr comment $PR_NUMBER --body "这看起来是更新网站地图的 PR，已自动启用自动合并。👍"
