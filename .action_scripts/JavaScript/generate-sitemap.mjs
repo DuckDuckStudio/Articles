@@ -38,6 +38,7 @@ try {
       '新时代科技发展与工作',
       '玻璃厂',
       '岳阳楼记',
+      'README.md', // index直接访问
     ];
 
     const files = readdirSync(dir);
