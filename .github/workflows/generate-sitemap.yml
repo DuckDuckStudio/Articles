@@ -65,6 +65,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
+          sleep 10 # 等 PR 创建了再查找
           # 获取前面创建的 PR 编号，确保 PR 名包含 "Auto update sitemap" 并带有 "工作流" 标签
           PR_NUMBER=$(gh pr list --limit 1 --search "Auto update sitemap" --label "工作流" --json number | jq -r '.[0].number')
           gh pr merge $PR_NUMBER --squash --auto
