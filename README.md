@@ -82,6 +82,14 @@
 - [记录命令输出](https://duckduckstudio.github.io/Articles/#/信息速查/终端/记录命令输出)
 - [PowerShell vs CMD](https://duckduckstudio.github.io/Articles/#/信息速查/终端/PowerShellvsCMD)
 
+### WSL (适用于 Linux 的 Windows 子系统)
+#### Ubuntu
+- [新建非 root 用户](https://duckduckstudio.github.io/Articles/#/信息速查/WSL/Ubuntu/新建非root用户)
+- [修改 DNS 配置](https://duckduckstudio.github.io/Articles/#/信息速查/WSL/Ubuntu/修改DNS)
+- [修改 Ubuntu 默认语言](https://duckduckstudio.github.io/Articles/#/信息速查/WSL/Ubuntu/修改Ubuntu语言)
+- [安装 OSU!](https://duckduckstudio.github.io/Articles/#/信息速查/WSL/Ubuntu/安装OSU)
+  - 基于 OSU! 论坛上的这篇帖子 [Installing osu! on Linux with low-latency [2024]](https://osu.ppy.sh/community/forums/topics/1248084)
+
 ## 独立文章
 - [给电脑小白的一点建议](https://duckduckstudio.github.io/Articles/#/给电脑小白的一点建议)
 - [实用操作](https://duckduckstudio.github.io/Articles/#/实用操作)
@@ -89,7 +97,3 @@
 
 ## 学习资料
 - [学习资料索引](https://duckduckstudio.github.io/Articles/#/学习资料/)
-
-<div style="text-align: right;">
-    <p>最后更新：<strong>2025/01/02</strong></p>
-</div>
