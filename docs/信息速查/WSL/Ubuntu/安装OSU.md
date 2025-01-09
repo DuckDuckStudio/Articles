@@ -95,7 +95,7 @@ Winello: Choose your option:
 > ```
 > WSL 没有图形化界面的问题。如果你的 WSL 有图形化界面就别看这篇啦，这篇是针对全新的 WSL Ubuntu 的。  
 
-### 4. 打开 OSU!
+## 4. 打开 OSU!
 ```bash
 osu-wine
 ```
@@ -110,7 +110,7 @@ wsl -d Ubuntu
 osu-wine
 ```
 
-### 5. 更新 OSU!
+## 5. 更新 OSU!
 打开后，OSU!会自动更新:  
 ![更新 OSU!](imgs/安装OSU/update.png)  
 这需要一些时间，你可以先去做点别的。  
