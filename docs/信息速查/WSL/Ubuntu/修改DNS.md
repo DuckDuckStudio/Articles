@@ -45,3 +45,77 @@ sudo nano /etc/wsl.conf
 [network]
 generateResolvConf = false
 ```
+
+## 4. 设置 Ubuntu 不自动生成
+如果你重启后发现 `/etc/resolv.conf` 又被自动修改了:
+```conf
+# This is /run/systemd/resolve/stub-resolv.conf managed by man:systemd-resolved(8).
+# Do not edit.
+#
+# This file might be symlinked as /etc/resolv.conf. If you're looking at
+# /etc/resolv.conf and seeing this text, you have followed the symlink.
+#
+# This is a dynamic resolv.conf file for connecting local clients to the
+# internal DNS stub resolver of systemd-resolved. This file lists all
+# configured search domains.
+#
+# Run "resolvectl status" to see details about the uplink DNS servers
+# currently in use.
+#
+# Third party programs should typically not access this file directly, but only
+# through the symlink at /etc/resolv.conf. To manage man:resolv.conf(5) in a
+# different way, replace this symlink by a static file or a different symlink.
+#
+# See man:systemd-resolved.service(8) for details about the supported modes of
+# operation for /etc/resolv.conf.
+
+nameserver ***.***.***.***
+options edns0 trust-ad
+search .
+```
+这次很明显不是 WSL 的问题，Ubuntu 默认使用 systemd-resolved 管理 DNS，并且会自动生成 `/etc/resolv.conf` 文件。如果你希望禁用这种自动修改，确保该文件保持静态，可以按照以下步骤进行操作:  
+```bash
+sudo nano /etc/systemd/resolved.conf
+```
+默认下，你会看到示例配置:  
+```conf
+[Resolve]
+# Some examples of DNS servers which may be used for DNS= and FallbackDNS=:
+# Cloudflare: 1.1.1.1#cloudflare-dns.com 1.0.0.1#cloudflare-dns.com 2606:4700:4700::1111#cloudflare-dns.com 2606:4700:4700::1001#cloudflare-dns># Google:     8.8.8.8#dns.google 8.8.4.4#dns.google 2001:4860:4860::8888#dns.google 2001:4860:4860::8844#dns.google
+# Quad9:      9.9.9.9#dns.quad9.net 149.112.112.112#dns.quad9.net 2620:fe::fe#dns.quad9.net 2620:fe::9#dns.quad9.net
+#DNS=
+#FallbackDNS=
+#Domains=
+#DNSSEC=no
+#DNSOverTLS=no
+#MulticastDNS=no
+#LLMNR=no
+#Cache=no-negative
+#CacheFromLocalhost=no
+#DNSStubListener=yes << 问题出在这里
+#DNSStubListenerExtra=
+#ReadEtcHosts=yes
+#ResolveUnicastSingleLabel=no
+#StaleRetentionSec=0
+```
+你可以修改为:  
+```conf
+[Resolve]
+# Some examples of DNS servers which may be used for DNS= and FallbackDNS=:
+# Cloudflare: 1.1.1.1#cloudflare-dns.com 1.0.0.1#cloudflare-dns.com 2606:4700:4700::1111#cloudflare-dns.com 2606:4700:4700::1001#cloudflare-dns># Google:     8.8.8.8#dns.google 8.8.4.4#dns.google 2001:4860:4860::8888#dns.google 2001:4860:4860::8844#dns.google
+# Quad9:      9.9.9.9#dns.quad9.net 149.112.112.112#dns.quad9.net 2620:fe::fe#dns.quad9.net 2620:fe::9#dns.quad9.net
+#DNS=
+#FallbackDNS=
+#Domains=
+#DNSSEC=no
+#DNSOverTLS=no
+#MulticastDNS=no
+#LLMNR=no
+#Cache=no-negative
+#CacheFromLocalhost=no
+DNSStubListener=no
+#DNSStubListenerExtra=
+#ReadEtcHosts=yes
+#ResolveUnicastSingleLabel=no
+#StaleRetentionSec=0
+```
