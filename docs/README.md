@@ -89,6 +89,8 @@
 - [修改 Ubuntu 默认语言](https://duckduckstudio.github.io/Articles/#/信息速查/WSL/Ubuntu/修改Ubuntu语言)
 - [安装 OSU!](https://duckduckstudio.github.io/Articles/#/信息速查/WSL/Ubuntu/安装OSU)
   - 基于 OSU! 论坛上的这篇帖子 [Installing osu! on Linux with low-latency [2024]](https://osu.ppy.sh/community/forums/topics/1248084)
+- [中文字符无法正常显示的解决方案](https://duckduckstudio.github.io/Articles/#/信息速查/WSL/Ubuntu/字体问题)
+  - 基于 知乎 上的这篇帖子 [WSL2 图形界面 中文显示 方框/乱码 解决方式](https://zhuanlan.zhihu.com/p/683470601)
 
 ## 独立文章
 - [给电脑小白的一点建议](https://duckduckstudio.github.io/Articles/#/给电脑小白的一点建议)

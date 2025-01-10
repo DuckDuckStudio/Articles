@@ -114,3 +114,10 @@ osu-wine
 打开后，OSU!会自动更新:  
 ![更新 OSU!](imgs/安装OSU/update.png)  
 这需要一些时间，你可以先去做点别的。  
+
+## 6. 玩
+更新完后就打开了。  
+
+### 6.1 其他问题
+请找找这里有没有相关解决方案:  
+- [中文字符无法显示](https://duckduckstudio.github.io/Articles/#/信息速查/WSL/Ubuntu/字体问题)
