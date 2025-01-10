@@ -70,3 +70,4 @@ jobs:
           PR_NUMBER=$(gh pr list --limit 1 --search "Auto update sitemap" --label "工作流" --json number | jq -r '.[0].number')
           gh pr merge $PR_NUMBER --squash --auto
           gh pr comment $PR_NUMBER --body "这看起来是更新网站地图的 PR，已自动启用自动合并。👍"
+          gh pr edit $PR_NUMBER --add-label "DEV-已启用自动合并" # 按理来说这应该是自动添加的，但不知道为什么没生效。修复 #24
