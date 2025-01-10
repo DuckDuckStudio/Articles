@@ -50,6 +50,7 @@
 ### Python
 #### 库
 - [os](https://duckduckstudio.github.io/Articles/#/信息速查/Python/库/os模块/index)
+
 ##### json
 - [获取值](https://duckduckstudio.github.io/Articles/#/信息速查/Python/库/json/获取值)
 
@@ -83,6 +84,8 @@
 - [PowerShell vs CMD](https://duckduckstudio.github.io/Articles/#/信息速查/终端/PowerShellvsCMD)
 
 ### WSL (适用于 Linux 的 Windows 子系统)
+- [将发行版安装在自定义文件夹](https://duckduckstudio.github.io/Articles/#/信息速查/WSL/安装在自定义文件夹)
+
 #### Ubuntu
 - [新建非 root 用户](https://duckduckstudio.github.io/Articles/#/信息速查/WSL/Ubuntu/新建非root用户)
 - [修改 DNS 配置](https://duckduckstudio.github.io/Articles/#/信息速查/WSL/Ubuntu/修改DNS)
