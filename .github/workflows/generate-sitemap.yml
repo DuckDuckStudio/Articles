@@ -1,73 +1,42 @@
 name: 生成 Sitemap
 
+# GitHub Actiion DuckDuckStudio/Sitemap_Creator 示例工作流
+# https://github.com/marketplace/actions/sitemap-creator-stable
+
 on:
   push:
     branches:
       - main
+      # 当 main 分支上有新推送且以下文件被更改时
     paths:
       - '**/*.html'
       - '**/*.md'
       - '.github/workflows/generate-sitemap.yml'
-      - '.action_scripts/JavaScript/generate-sitemap.mjs'
-  workflow_dispatch:
+  workflow_dispatch: # 手动运行
 
 jobs:
   generate_sitemap:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 检出仓库
-        uses: actions/checkout@v4
+      - name: 更新网站地图
+        uses: DuckDuckStudio/Sitemap_Creator@1.0.0
         with:
-          fetch-depth: 0
+          location: "docs/sitemap.xml"
+          basic_link: "https://duckduckstudio.github.io/Articles/#" # docsify 部署的
+          file_type: "html,md" # 默认值也是这个，爱加不加
+          ignore_file: "_Footer.md,404.html,某鸭的文章页面模板.html,营销号"
+          website_path: "docs"
+          base_branch: main # 默认值也是这个，爱加不加
+          debug: true # 启用调试输出
 
-      - name: 设置 Node.js 环境
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-
-      - name: 设置时区
-        run: sudo timedatectl set-timezone Asia/Shanghai
-
-      - name: 创建 Sitemap
-        run: node .action_scripts/JavaScript/generate-sitemap.mjs
-
-      - name: 提交并推送 sitemap.xml
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          # 获取当前日期和时间
-          DATE_TIME=$(date '+%Y/%m/%d %H:%M')
-          
-          BRANCH_NAME="sitemap-update-$(date +%Y%m%d%H%M%S)"
-          git checkout -b $BRANCH_NAME
-          echo "已创建分支 $BRANCH_NAME"
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/sitemap.xml
-          git commit -m "[${DATE_TIME}] Auto update sitemap"
-          git push --set-upstream origin $BRANCH_NAME
-
-          # 生成工作流 URL
-          WORKFLOW_URL="https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
-
-          # 使用 GitHub CLI 创建 PR，动态设置 body 内容为工作流链接
-          gh pr create --title "[${DATE_TIME}] Auto update sitemap" \
-                       --body "Created through the [workflow](${WORKFLOW_URL})." \
-                       --base main \
-                       --head $BRANCH_NAME \
-                       --label "工作流,DEV-开发分支合并" \
-                       --reviewer DuckDuckStudio
-
-          echo "Pull Request 创建成功。"
-
-      - name: 启用自动合并 (压缩)
+      - name: 启用自动合并 (压缩) # 此步骤是我另外手动加的，后续可能会将其加入为新参数
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           sleep 10 # 等 PR 创建了再查找
-          # 获取前面创建的 PR 编号，确保 PR 名包含 "Auto update sitemap" 并带有 "工作流" 标签
-          PR_NUMBER=$(gh pr list --limit 1 --search "Auto update sitemap" --label "工作流" --json number | jq -r '.[0].number')
+          # 获取前面创建的 PR 编号，确保 PR 名包含 "Auto update sitemap"
+          PR_NUMBER=$(gh pr list --limit 1 --search "Auto update sitemap" --json number | jq -r '.[0].number')
           gh pr merge $PR_NUMBER --squash --auto
           gh pr comment $PR_NUMBER --body "这看起来是更新网站地图的 PR，已自动启用自动合并。👍"
-          gh pr edit $PR_NUMBER --add-label "DEV-已启用自动合并" # 按理来说这应该是自动添加的，但不知道为什么没生效。修复 #24
+          gh pr edit $PR_NUMBER --add-label "DEV-已启用自动合并,工作流,DEV-开发分支合并" # 此处按照你自己仓库的标签来
