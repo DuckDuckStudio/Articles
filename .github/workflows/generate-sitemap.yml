@@ -20,14 +20,15 @@ jobs:
 
     steps:
       - name: 更新网站地图
-        uses: fjwxzde/Sitemap_Creator_Pre-Release@1.0.2
+        uses: fjwxzde/Sitemap_Creator_Pre-Release@test202501210922
         with:
           location: "docs/sitemap.xml"
           basic_link: "https://duckduckstudio.github.io/Articles/#" # docsify 部署的
           ignore_file: "_Footer.md,404.html,某鸭的文章页面模板.html,营销号"
           website_path: "docs"
-          labels: "DEV-已启用自动合并,工作流,DEV-开发分支合并"
+          label: "DEV-已启用自动合并,工作流,DEV-开发分支合并"
           auto_merge: "压缩合并"
+          reviewer: "Luna-Grace,fjwxzde,DuckDuckStudio"
           debug: true # 启用调试输出
           # 其他参数默认
           # base_branch: "main"
