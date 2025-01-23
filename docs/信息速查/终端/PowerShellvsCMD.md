@@ -3,8 +3,9 @@
 | CMD | PowerShell | 用途 | 备注 |
 |-----|-----|-----|-----|
 | / | `Get-Content "file.txt"` | 读取文件内容 | [More](#Get-Content) |
-| `echo` | `Write-Host` / `Write-Output` | 输出 | [Diff in PowerShell](#echo) |
+| `echo` | `Write-Host` / `Write-Output` | 输出 | [Diff in PowerShell](#write-host-vs-write-output) |
 | `title 标题` | `$host.ui.RawUI.WindowTitle = "标题"` | 修改当前会话窗口标题 | / |
+| `cd` | `Set-Location` | 切换执行目录 | / |
 
 ## 备注
 ### Get-Content
@@ -54,12 +55,16 @@ Get-Content "file.txt" | Select-Object -Last 10
 
 这个命令会显示文件的最后 `10` 行。  
 
----
-
-<h3 id="echo">Write-Host vs Write-Output</h3>
+### Write-Host vs Write-Output
 
 | Command | Do what |
 |-----|-----|
 | `Write-Host` | 用于直接打印到控制台（不用于进一步处理） |
 | `Write-Output` | 用于将输出发送到管道（用于链接命令） |
 
+### xx 明明就是 pwsh 命令的别名
+我知道，但是你在一些 IDE (例如 VSCode) 中使用别名的话，会跳警告，例如:  
+```warning
+'xx' is an alias of 'Xxx'. Alias can introduce possible problems and make scripts hard to maintain. Please consider changing alias to its full content.PSScriptAnalyzer(PSAvoidUsingCmdletAliases)
+```
+相关文档: [AvoidUsingCmdletAliases - PowerShell | Microsoft Learn](https://learn.microsoft.com/zh-cn/powershell/utility-modules/psscriptanalyzer/rules/avoidusingcmdletaliases?view=ps-modules)

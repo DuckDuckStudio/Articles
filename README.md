@@ -15,6 +15,7 @@
 ## 信息速查(Quick query)
 ### 概念
 - [“相对路径”与“绝对路径”的区别](https://duckduckstudio.github.io/Articles/#/信息速查/概念/“相对路径”与“绝对路径”的区别)
+- [GitHub中的一些常用词](https://duckduckstudio.github.io/Articles/#/信息速查/概念/GitHub中的一些用词)
 
 ### Git
 - [Git提交规范](https://duckduckstudio.github.io/Articles/#/信息速查/Git/Git提交规范) ~~(如果是自己写的项目请先保证自己看得懂)~~
