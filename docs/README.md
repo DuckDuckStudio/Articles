@@ -94,6 +94,13 @@
 - [安装 OSU!](https://duckduckstudio.github.io/Articles/#/信息速查/WSL/Ubuntu/安装OSU)
   - 基于 OSU! 论坛上的这篇帖子 [Installing osu! on Linux with low-latency [2024]](https://osu.ppy.sh/community/forums/topics/1248084)
 
+### Android
+
+> 此分类下的文章尚不完善。
+
+#### ADB
+- [拉取设备照片](https://duckduckstudio.github.io/Articles/#/信息速查/Android/ADB/拉取设备照片)
+
 ## 独立文章
 - [给电脑小白的一点建议](https://duckduckstudio.github.io/Articles/#/给电脑小白的一点建议)
 - [实用操作](https://duckduckstudio.github.io/Articles/#/实用操作)
