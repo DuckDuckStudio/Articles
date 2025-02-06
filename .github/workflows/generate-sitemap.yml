@@ -29,8 +29,8 @@ jobs:
           label: "DEV-已启用自动合并,工作流,DEV-开发分支合并"
           auto_merge: "压缩合并"
           debug: true # 启用调试输出
+          base_branch: "Sitemap_Creator"
           # 其他参数默认
-          # base_branch: "main"
           # file_type: "html,md"
           # token: ${{ github.token }}
           # timezone: "Asia/Shanghai"
