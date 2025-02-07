@@ -16,7 +16,7 @@ on:
 
 jobs:
   generate_sitemap:
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
 
     steps:
       - name: 更新网站地图
