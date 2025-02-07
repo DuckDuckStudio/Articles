@@ -35,4 +35,4 @@ jobs:
           # token: ${{ github.token }}
           # timezone: "Asia/Shanghai"
           # update: "拉取请求"
-          reviewer: DuckDuckStudio,Luna-Grace
+          reviewer: DuckDuckStudio,Luna-Grace"
