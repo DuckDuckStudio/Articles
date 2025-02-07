@@ -20,7 +20,7 @@ jobs:
 
     steps:
       - name: 更新网站地图
-        uses: fjwxzde/Sitemap_Creator_Pre-Release@1.0.3.2
+        uses: fjwxzde/Sitemap_Creator_Pre-Release@1.0.3.3
         with:
           location: "docs/sitemap.xml"
           basic_link: "https://duckduckstudio.github.io/Articles/#" # docsify 部署的
