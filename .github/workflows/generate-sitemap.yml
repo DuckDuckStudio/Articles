@@ -16,7 +16,7 @@ on:
 
 jobs:
   generate_sitemap:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
       - name: 更新网站地图
@@ -33,6 +33,6 @@ jobs:
           # 其他参数默认
           # file_type: "html,md"
           # token: ${{ github.token }}
-          # timezone: "Asia/Shanghai"
+          timezone: "Beijing"
           # update: "拉取请求"
-          reviewer: DuckDuckStudio,Luna-Grace"
+          reviewer: DuckDuckStudio
