@@ -16,11 +16,11 @@ on:
 
 jobs:
   generate_sitemap:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
       - name: 更新网站地图
-        uses: fjwxzde/Sitemap_Creator_Pre-Release@1.0.3
+        uses: fjwxzde/Sitemap_Creator_Pre-Release@1.0.4
         with:
           location: "docs/sitemap.xml"
           basic_link: "https://duckduckstudio.github.io/Articles/#" # docsify 部署的
@@ -29,10 +29,10 @@ jobs:
           label: "DEV-已启用自动合并,工作流,DEV-开发分支合并"
           auto_merge: "压缩合并"
           debug: true # 启用调试输出
+          base_branch: "Sitemap_Creator"
           # 其他参数默认
-          # base_branch: "main"
           # file_type: "html,md"
           # token: ${{ github.token }}
-          # timezone: "Asia/Shanghai"
+          timezone: China Standard Time
           # update: "拉取请求"
-          # reviewer:
+          reviewer: DuckDuckStudio
