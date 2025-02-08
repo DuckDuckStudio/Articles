@@ -11,3 +11,6 @@
 | AFAIK | As far as I know | 据我所知 | AFAIK，由于xxx，此软件包不能静默安装 |
 | IMHO | In my humble opinion | 在我谦虚的观点/看法中 | IMHO, keeping the ARM installer may be is to support users who might need it. |
 | CC | Carbon copy | 抄送 | CC @某人 |
+| ITNOA | It's Not Our Area | 这不是我们处理的范畴 | / |
+| IIRC | If I Recall Correctly | 如果我没记错的话 | / |
+| BTW | By The Way | 顺便说句/顺带一提 | BTW, ... |
