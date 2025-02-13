@@ -44,3 +44,10 @@ exit
 wsl --shutdown
 wsl -d Ubuntu
 ```
+
+> [!TIP]  
+> 如果还有问题试试这个:  
+> ```bash
+> sudo apt update
+> sudo apt install language-pack-zh-hans
+> ```
