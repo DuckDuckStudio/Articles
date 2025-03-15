@@ -15,3 +15,5 @@
 | IIRC | If I Recall Correctly | 如果我没记错的话 | / |
 | BTW | By The Way | 顺便说句/顺带一提 | BTW, ... |
 | FWIW | For What It's Worth | 仅供参考/就我个人观点而言 | / |
+| FYI | For Your Information | 供你参考 | / |
+| EOD | End of the day | 今天结束 (职场中表示今天的工作结束，即下班)，该词没有“之前”的意思，常与 "within" (“在……范围内”或“在……之内”) 搭配表示在今天(的工作)结束之前 | I'll *(do something)* within EOD. |
