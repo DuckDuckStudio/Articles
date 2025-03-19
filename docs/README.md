@@ -98,6 +98,7 @@
 - [新建非 root 用户](信息速查/WSL/Ubuntu/新建非root用户)
 - [修改 DNS 配置](信息速查/WSL/Ubuntu/修改DNS)
 - [修改 Ubuntu 默认语言](信息速查/WSL/Ubuntu/修改Ubuntu语言)
+- [中文字体方框/问题](信息速查/WSL/Ubuntu/字体问题)
 - [安装 OSU!](信息速查/WSL/Ubuntu/安装OSU)
   - 基于 OSU! 论坛上的这篇帖子 [Installing osu! on Linux with low-latency [2024]](https://osu.ppy.sh/community/forums/topics/1248084)
 

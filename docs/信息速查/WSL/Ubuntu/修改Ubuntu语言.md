@@ -10,7 +10,7 @@
 ```
 
 ## 1. 打开 Ubuntu
-通过Windows终端配置文件或以下命令打开 Ubuntu:  
+通过 Windows 终端配置文件或以下命令打开 Ubuntu:  
 ```powershell
 wsl -d Ubuntu
 ```
