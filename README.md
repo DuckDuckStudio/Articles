@@ -90,6 +90,8 @@
 ### 终端
 - [记录命令输出](信息速查/终端/记录命令输出)
 - [PowerShell vs CMD](信息速查/终端/PowerShellvsCMD)
+#### PowerShell
+- [Write-Debug](信息速查/终端/PowerShell/Write-Debug)
 
 ### WSL (适用于 Linux 的 Windows 子系统)
 - [将发行版安装在自定义文件夹](信息速查/WSL/安装在自定义文件夹)
