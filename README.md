@@ -13,9 +13,10 @@
 - ~~[自己看的一些MSVC指令](https://duckduckstudio.github.io/Articles/#/如何怎样/MSVC部分指令)~~
 
 ## 信息速查(Quick query)
+- [一些英语简写](https://duckduckstudio.github.io/Articles/#/信息速查/一些英语简写)
+
 ### 概念
 - [“相对路径”与“绝对路径”的区别](https://duckduckstudio.github.io/Articles/#/信息速查/概念/“相对路径”与“绝对路径”的区别)
-- [GitHub中的一些常用词](https://duckduckstudio.github.io/Articles/#/信息速查/概念/GitHub中的一些用词)
 
 ### 配置文件
 #### YAML
