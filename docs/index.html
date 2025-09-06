@@ -25,6 +25,8 @@
                     <a href="https://duckduckstudio.github.io/yazicbs.github.io/" target="_blank">[前往某鸭的主页]</a>
                     &nbsp;|&nbsp;
                     <a href="https://duckduckstudio.github.io/Articles/">[前往文章索引]</a>
+                    &nbsp;|&nbsp;
+                    <a id="gh-url" href="https://github.com/DuckDuckStudio/Articles/tree/main/docs/">[在GitHub上阅读]</a>
                 </p>
                 </div>
                 `;
@@ -37,5 +39,17 @@
         </script>
         <!-- Docsify v4 -->
         <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+        <script>
+            window.onload = function () {
+                var path = window.location.hash.replace("#/", "");
+                if (path.endsWith("/")) {
+                    document.getElementById("gh-url").href = "https://github.com/DuckDuckStudio/Articles/blob/main/docs/" + path + "README.md";
+                } else if (!path.endsWith(".md") && !path.endsWith(".html")) {
+                    document.getElementById("gh-url").href = "https://github.com/DuckDuckStudio/Articles/blob/main/docs/" + path + ".md";
+                } else {
+                    document.getElementById("gh-url").href = "https://github.com/DuckDuckStudio/Articles/blob/main/docs/" + path
+                }
+            }
+        </script>
     </body>
 </html>
