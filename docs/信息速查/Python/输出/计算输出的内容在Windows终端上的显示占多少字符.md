@@ -64,8 +64,8 @@ print(f"{" " * len(s)}|")
 
 预期末尾的两个 `|` 能对齐。  
 
-![末尾标识对齐](https://duckduckstudio.github.io/Articles/docs/信息速查/Python/输出/photos/计算输出的内容在Windows终端上的显示占多少字符/末尾标识对齐的输出.png)
+![末尾标识对齐](https://duckduckstudio.github.io/Articles/信息速查/Python/输出/photos/计算输出的内容在Windows终端上的显示占多少字符/末尾标识对齐的输出.png)
 
 如果只计算 `len(s)` 的话这两个 `|` 不会对齐（不够）:  
 
-![末尾标识未对齐](https://duckduckstudio.github.io/Articles/docs/信息速查/Python/输出/photos/计算输出的内容在Windows终端上的显示占多少字符/末尾标识未对其的输出.png)
+![末尾标识未对齐](https://duckduckstudio.github.io/Articles/信息速查/Python/输出/photos/计算输出的内容在Windows终端上的显示占多少字符/末尾标识未对其的输出.png)
