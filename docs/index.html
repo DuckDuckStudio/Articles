@@ -25,6 +25,8 @@
                     <a href="https://duckduckstudio.github.io/yazicbs.github.io/" target="_blank">[前往某鸭的主页]</a>
                     &nbsp;|&nbsp;
                     <a href="https://duckduckstudio.github.io/Articles/">[前往文章索引]</a>
+                    &nbsp;|&nbsp;
+                    <a id="gh-url" href="https://github.com/DuckDuckStudio/Articles/tree/main/docs/">[在GitHub上阅读]</a>
                 </p>
                 </div>
                 `;
@@ -37,5 +39,24 @@
         </script>
         <!-- Docsify v4 -->
         <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+        <script>
+            // 在加载完成后替换 gh-url 为对应文章的链接
+            // 例如 https://duckduckstudio.github.io/Articles/#/信息速查/Python/输出/计算输出的内容在Windows终端上的显示占多少字符
+            // 替换后为 https://github.com/DuckDuckStudio/Articles/blob/main/docs/信息速查/Python/输出/计算输出的内容在Windows终端上的显示占多少字符.md
+            // 如果末尾是 / 则替换为 README.md
+
+            window.addEventListener("load", function () {
+                var ghUrl = document.getElementById("gh-url");
+                if (ghUrl) {
+                    var currentHash = window.location.hash; // 获取当前的 hash 部分
+                    // 示例: #/信息速查/Python/输出/计算输出的内容在Windows终端上的显示占多少字符
+                    if (currentHash.endsWith("/")) {
+                        ghUrl.href = "https://github.com/DuckDuckStudio/Articles/blob/main/docs/" + currentHash.slice(2, -1) + "README.md";
+                    } else {
+                        ghUrl.href = "https://github.com/DuckDuckStudio/Articles/blob/main/docs/" + currentHash.slice(2, -1) + ".md";
+                    }
+                }
+            });
+        </script>
     </body>
 </html>
