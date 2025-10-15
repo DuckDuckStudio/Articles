@@ -6,8 +6,12 @@
 - [如何打开命令行(cmd)](https://duckduckstudio.github.io/Articles/如何怎样/如何打开命令提示符.html)
 - [如何打开任务管理器](https://duckduckstudio.github.io/Articles/如何怎样/如何打开任务管理器.html)
 
-### GitHub Page
-- [如何部署一个GitHub Page(在你有代码的前提下)](https://duckduckstudio.github.io/Articles/#/如何怎样/GitHub%20Page/如何部署GitHub%20Page)
+### GitHub
+#### Page
+- [如何部署一个GitHub Page(在你有代码的前提下)](https://duckduckstudio.github.io/Articles/#/如何怎样/GitHub/Page/如何部署GitHub%20Page)
+
+#### Rulesets / 规则集
+- [如何在分支保护规则集中要求 PR 必须通过自己的 CI/工作流](https://duckduckstudio.github.io/Articles/#/如何怎样/GitHub/Rulesets/如何在分支保护规则集中要求PR必须通过自己的CI)
 
 ### 电台 / 广播
 - [我该去哪里听电台/广播](https://duckduckstudio.github.io/Articles/#/如何怎样/电台/我该去哪里听电台)
