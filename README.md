@@ -38,6 +38,7 @@
 - [在远程仓库将分支更名后怎么办](https://duckduckstudio.github.io/Articles/#/信息速查/Git/在远程仓库将分支更名后怎么办)
 - [如何清空分支提交](https://duckduckstudio.github.io/Articles/#/信息速查/Git/清空提交)
 - [如何不再跟踪文件](https://duckduckstudio.github.io/Articles/#/信息速查/Git/不再跟踪)
+- [在 .gitignore 文件中排除特定文件或目录](https://duckduckstudio.github.io/Articles/#/信息速查/Git/在%20gitignore%20文件中排除特定文件或目录)
 - [批量清理本地分支](https://duckduckstudio.github.io/Articles/#/信息速查/Git/批量清理本地分支)
 
 ### Markdown
