@@ -33,6 +33,7 @@ Would remove .vscode/
 这时候整个 `.vscode` 文件夹都被忽略了，但我们希望在版本控制中保留 `launch.json`。  
 
 我们修改 `.gitignore` 成这样:  
+
 ```gitignore
 # 尝试保留 .vscode/launch.json
 .vscode/
