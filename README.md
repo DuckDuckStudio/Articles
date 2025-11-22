@@ -25,6 +25,10 @@
 ### 概念
 - [“相对路径”与“绝对路径”的区别](https://duckduckstudio.github.io/Articles/#/信息速查/概念/“相对路径”与“绝对路径”的区别)
 
+### 表单
+- [在提 Issue 前，请先问自己几个问题](https://duckduckstudio.github.io/Articles/#/信息速查/表单/提Issue)
+- [在提 PR 前，请先问自己几个问题](https://duckduckstudio.github.io/Articles/#/信息速查/表单/提PR)
+
 ### 配置文件
 #### YAML
 
