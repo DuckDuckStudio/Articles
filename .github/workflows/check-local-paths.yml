@@ -1,10 +1,5 @@
 name: 检查本地路径
 
-# GitHub Action DuckDuckStudio/Check_Locale_Paths 版本 1.0.0 示例工作流
-# https://github.com/marketplace/actions/check-locale-paths
-# 通过 [GNU Affero General Public License v3.0](https://github.com/DuckDuckStudio/Check_Locale_Paths/blob/main/LICENSE) 许可
-# 此工作流最初通过 [GNU Affero General Public License v3.0](https://github.com/DuckDuckStudio/yazicbs.github.io/blob/main/LICENSE.txt) 从 DuckDuckStudio/yazicbs.github.io 获得许可。
-
 on:
   push:
     branches:
