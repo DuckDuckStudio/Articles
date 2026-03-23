@@ -14,13 +14,15 @@ on:
       - '**/*.md'
   workflow_dispatch: # 手动运行
 
+permissions: {}
+
 jobs:
   generate_sitemap:
     runs-on: ubuntu-latest
 
     steps:
       - name: 更新网站地图
-        uses: DuckDuckStudio/Sitemap_Creator@1.0.12
+        uses: DuckDuckStudio/Sitemap_Creator@bbce09012487969f8170af140d286ce32105e357 # 1.0.12
         with:
           location: "docs/sitemap.xml"
           basic_link: "https://duckduckstudio.github.io/Articles/#" # docsify 部署的

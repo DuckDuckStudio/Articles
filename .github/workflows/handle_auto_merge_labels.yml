@@ -6,6 +6,8 @@ on:
       - auto_merge_enabled
       - auto_merge_disabled
 
+permissions: {}
+
 jobs:
   handle_auto_merge_labels:
     runs-on: ubuntu-latest
