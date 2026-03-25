@@ -6,7 +6,8 @@ on:
       - auto_merge_enabled
       - auto_merge_disabled
 
-permissions: {}
+permissions:
+  pull-requests: write
 
 jobs:
   handle_auto_merge_labels:
