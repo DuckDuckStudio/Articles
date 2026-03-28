@@ -113,6 +113,7 @@
 
 ### WSL (适用于 Linux 的 Windows 子系统)
 - [将发行版安装在自定义文件夹](https://duckduckstudio.github.io/Articles/#/信息速查/WSL/安装在自定义文件夹)
+- [限制挂载和互操作](https://duckduckstudio.github.io/Articles/#/信息速查/WSL/限制挂载和互操作)
 
 #### Ubuntu
 - [新建非 root 用户](https://duckduckstudio.github.io/Articles/#/信息速查/WSL/Ubuntu/新建非root用户)
