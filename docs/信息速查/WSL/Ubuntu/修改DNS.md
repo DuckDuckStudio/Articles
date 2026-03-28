@@ -1,21 +1,6 @@
 # 修改 WSL Ubuntu 中的 DNS 设置
 
-## 0. 操作前确认
-请确认你已安装 Ubuntu:  
-```powershell
-[Powered by 虚空终端] PS D:\...> wsl --list --verbose
-  NAME              STATE           VERSION
-* docker-desktop    Stopped         2
-  Ubuntu            Stopped         2
-```
-
-## 1. 打开 Ubuntu
-通过 Windows 终端配置文件或以下命令打开 Ubuntu:  
-```powershell
-wsl -d Ubuntu
-```
-
-## 2. 编辑配置文件
+## 1. 编辑配置文件
 ```bash
 sudo nano /etc/resolv.conf
 ```
@@ -35,7 +20,7 @@ nameserver 1.1.1.1
 ```
 等别的设置。
 
-## 3. 设置不自动生成
+## 2. 设置不自动生成
 前面的提示消息写的很清楚了:  
 ```bash
 sudo nano /etc/wsl.conf
@@ -46,7 +31,7 @@ sudo nano /etc/wsl.conf
 generateResolvConf = false
 ```
 
-## 4. 设置 Ubuntu 不自动生成
+## 3. 设置 Ubuntu 不自动生成
 如果你重启后发现 `/etc/resolv.conf` 又被自动修改了:
 ```conf
 # This is /run/systemd/resolve/stub-resolv.conf managed by man:systemd-resolved(8).
@@ -73,10 +58,12 @@ nameserver ***.***.***.***
 options edns0 trust-ad
 search .
 ```
+
 这次很明显不是 WSL 的问题，Ubuntu 默认使用 systemd-resolved 管理 DNS，并且会自动生成 `/etc/resolv.conf` 文件。如果你希望禁用这种自动修改，确保该文件保持静态，可以按照以下步骤进行操作:  
 ```bash
 sudo nano /etc/systemd/resolved.conf
 ```
+
 默认下，你会看到示例配置:  
 ```conf
 [Resolve]
@@ -98,6 +85,7 @@ sudo nano /etc/systemd/resolved.conf
 #ResolveUnicastSingleLabel=no
 #StaleRetentionSec=0
 ```
+
 你可以修改为:  
 ```conf
 [Resolve]
