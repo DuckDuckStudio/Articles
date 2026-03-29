@@ -113,12 +113,14 @@
 
 ### WSL (适用于 Linux 的 Windows 子系统)
 - [将发行版安装在自定义文件夹](信息速查/WSL/安装在自定义文件夹)
+- [限制挂载和互操作](信息速查/WSL/限制挂载和互操作)
 
 #### Ubuntu
 - [新建非 root 用户](信息速查/WSL/Ubuntu/新建非root用户)
 - [修改 DNS 配置](信息速查/WSL/Ubuntu/修改DNS)
 - [修改 Ubuntu 默认语言](信息速查/WSL/Ubuntu/修改Ubuntu语言)
 - [中文字体方框/问题](信息速查/WSL/Ubuntu/字体问题)
+- [常用软件](信息速查/WSL/Ubuntu/常用软件)
 - [安装 OSU!](信息速查/WSL/Ubuntu/安装OSU)
   - 基于 OSU! 论坛上的这篇帖子 [Installing osu! on Linux with low-latency [2024]](https://osu.ppy.sh/community/forums/topics/1248084)
 
