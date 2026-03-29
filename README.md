@@ -120,6 +120,7 @@
 - [修改 DNS 配置](https://duckduckstudio.github.io/Articles/#/信息速查/WSL/Ubuntu/修改DNS)
 - [修改 Ubuntu 默认语言](https://duckduckstudio.github.io/Articles/#/信息速查/WSL/Ubuntu/修改Ubuntu语言)
 - [中文字体方框/问题](https://duckduckstudio.github.io/Articles/#/信息速查/WSL/Ubuntu/字体问题)
+- [常用软件](https://duckduckstudio.github.io/Articles/#/信息速查/WSL/Ubuntu/常用软件)
 - [安装 OSU!](https://duckduckstudio.github.io/Articles/#/信息速查/WSL/Ubuntu/安装OSU)
   - 基于 OSU! 论坛上的这篇帖子 [Installing osu! on Linux with low-latency [2024]](https://osu.ppy.sh/community/forums/topics/1248084)
 
