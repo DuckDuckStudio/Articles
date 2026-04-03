@@ -97,11 +97,11 @@
 ### C#
 #### 控制台程序
 ##### 输出
-- [Write与WriteLine](https://duckduckstudio.github.io/Articles/#/信息速查/csharp/控制台程序/输出/Write与WriteLine)
-- [控制颜色](https://duckduckstudio.github.io/Articles/#/信息速查/csharp/控制台程序/输出/控制颜色.md)
+- [Write与WriteLine](https://duckduckstudio.github.io/Articles/#/信息速查/DotNet/Csharp/控制台程序/输出/Write与WriteLine)
+- [控制颜色](https://duckduckstudio.github.io/Articles/#/信息速查/DotNet/Csharp/控制台程序/输出/控制颜色.md)
 
 ##### 运行
-- [定义退出代码](https://duckduckstudio.github.io/Articles/#/信息速查/csharp/控制台程序/运行/定义退出代码)
+- [定义退出代码](https://duckduckstudio.github.io/Articles/#/信息速查/DotNet/Csharp/控制台程序/运行/定义退出代码)
 
 ### 终端
 - [记录命令输出](https://duckduckstudio.github.io/Articles/#/信息速查/终端/记录命令输出)
