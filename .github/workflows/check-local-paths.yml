@@ -14,4 +14,4 @@ jobs:
 
     steps:
       - name: 检查本地路径
-        uses: DuckDuckStudio/Check_Locale_Paths@21b6719797a806d8f3e60bdd1a945c133f65dcaa # 2.0.5
+        uses: DuckDuckStudio/Check_Locale_Paths@2f3264da0b9bc5799380851283c7edb1e1ebfe86 # 3.0.0
