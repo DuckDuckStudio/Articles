@@ -25,7 +25,7 @@ jobs:
 
     steps:
       - name: 更新网站地图
-        uses: DuckDuckStudio/Sitemap_Creator@90d4026b88835d67fa224f9aa4567ae7808c28e3 # 2.0.0
+        uses: DuckDuckStudio/Sitemap_Creator@02179ff6dac415df15af81b37f1c4b14d9ff3aa6 # 2.0.1
         with:
           location: "docs/sitemap.xml"
           basic_link: "https://duckduckstudio.github.io/Articles/#" # docsify 部署的
