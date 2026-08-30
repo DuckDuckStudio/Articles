@@ -112,7 +112,6 @@
 - [WinGet 的一些参考信息](https://duckduckstudio.github.io/Articles/#/信息速查/终端/WinGet/参考信息)
 
 ### WSL (适用于 Linux 的 Windows 子系统)
-- [将发行版安装在自定义文件夹](https://duckduckstudio.github.io/Articles/#/信息速查/WSL/安装在自定义文件夹)
 - [限制挂载和互操作](https://duckduckstudio.github.io/Articles/#/信息速查/WSL/限制挂载和互操作)
 
 #### Ubuntu
